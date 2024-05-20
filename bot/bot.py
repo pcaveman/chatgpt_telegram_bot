@@ -28,13 +28,13 @@ from telegram.ext import (
 from telegram.constants import ParseMode, ChatAction
 
 import config
-import database
+import databasefake
 import openai_utils
 
 import base64
 
 # setup
-db = database.Database()
+db = databasefake.Database()
 logger = logging.getLogger(__name__)
 
 user_semaphores = {}
